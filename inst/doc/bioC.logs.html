@@ -13,7 +13,7 @@
 
 <meta name="author" content="Marcelo Ponce" />
 
-<meta name="date" content="2020-01-29" />
+<meta name="date" content="2020-02-12" />
 
 <title>bioC.logs: Stats logs from BioConductor packages downloads</title>
 
@@ -218,12 +218,13 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">bioC.logs: Stats logs from BioConductor packages downloads</h1>
 <h4 class="author">Marcelo Ponce</h4>
-<h4 class="date">2020-01-29</h4>
+<h4 class="date">2020-02-12</h4>
 
 
 
 <div id="bioc.logs" class="section level1">
 <h1>bioC.logs</h1>
+<p><a href="https://cran.r-project.org/package=bioC.logs"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTQiIGhlaWdodD0iMjAiPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDI9IjAiIHkyPSIxMDAlIj4KICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8bWFzayBpZD0iYSI+CiAgICA8cmVjdCB3aWR0aD0iMTU0IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPgogIDwvbWFzaz4KICA8ZyBtYXNrPSJ1cmwoI2EpIj4KICAgIDxwYXRoIGZpbGw9IiM1NTUiIGQ9Ik0wIDBoNDN2MjBIMHoiLz4KICAgIDxwYXRoIGZpbGw9IiM0YzEiIGQ9Ik00MyAwaDEzMC41djIwSDQzeiIvPgogICAgPHBhdGggZmlsbD0idXJsKCNiKSIgZD0iTTAgMGgxNTR2MjBIMHoiLz4KICA8L2c+CiAgPGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgICBmb250LWZhbWlseT0iRGVqYVZ1IFNhbnMsVmVyZGFuYSxHZW5ldmEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSI+CiAgICA8dGV4dCB4PSIyMS41IiB5PSIxNSIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgIENSQU4KICAgIDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIxLjUiIHk9IjE0Ij4KICAgICAgQ1JBTgogICAgPC90ZXh0PgogICAgPHRleHQgeD0iOTcuNSIgeT0iMTUiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAxLjAg4oCTIDIwMjAtMDItMDkKICAgIDwvdGV4dD4KICAgIDx0ZXh0IHg9Ijk3LjUiIHk9IjE0Ij4KICAgICAgMS4wIOKAkyAyMDIwLTAyLTA5CiAgICA8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" alt="CRAN_Status_Badge" /></a> <a href="https://cran.r-project.org/package=bioC.logs"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDkiIGhlaWdodD0iMjAiPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDI9IjAiIHkyPSIxMDAlIj4KICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8bWFzayBpZD0iYSI+CiAgICA8cmVjdCB3aWR0aD0iMTQ5IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPgogIDwvbWFzaz4KICA8ZyBtYXNrPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSIjNTU1IiBkPSJNMCAwaDcwdjIwSDB6Ii8+CiAgICA8cGF0aCBmaWxsPSIjMDA3ZWM2IiBkPSJNNzAgMGg3OXYyMEg3MHoiLz4KICAgIDxwYXRoIGZpbGw9InVybCgjYikiIGQ9Ik0wIDBoMTQ5djIwSDB6Ii8+CiAgPC9nPgogIDxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgPHRleHQgeD0iMzYiIHk9IjE1IiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIj4KICAgICAgZG93bmxvYWRzCiAgICA8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQiPgogICAgICBkb3dubG9hZHMKICAgIDwvdGV4dD4KICAgIDx0ZXh0IHg9IjEwOC41IiB5PSIxNSIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgIDE0L21vbnRoCiAgICA8L3RleHQ+CiAgICA8dGV4dCB4PSIxMDguNSIgeT0iMTQiPgogICAgICAxNC9tb250aAogICAgPC90ZXh0PgogIDwvZz4KPC9zdmc+" alt="Downloads" /></a></p>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>This package allows you to download the statistics of BioConductor packages’ downloads as reported by <a href="http://bioconductor.org/packages/stats/" class="uri">http://bioconductor.org/packages/stats/</a>.</p>
@@ -252,40 +253,81 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <td>accepts two options: <code>&quot;bioC&quot;</code> (default) will report the downloads as reported by bioconductor, ie. <em>“Year Month Nb_of_distinct_IPs Nb_of_downloads”</em>; or, <code>&quot;CRAN&quot;</code> will report as CRAN logs does, ie. <em>“Date Nb_of_downloads package_Name”</em></td>
 </tr>
 <tr class="odd">
-<td><code>verbose</code></td>
-<td>is a boolean flag indicating whether to print information about the processes</td>
+<td><code>from/to</code></td>
+<td>optional arguments to indicate range of dates to recover the data within – can NOT be used in combination with <code>when</code></td>
+</tr>
+<tr class="even">
+<td><code>when</code></td>
+<td>option argument to specify the range of dates to recover the data within – can NOT be used in combination with <code>from/to</code>; possible options are “<code>ytd</code>”,&quot;<code>year-to-date&#39;&quot;,&quot;</code>year-from-now<code>&quot;,&quot;</code>last-year<code>&quot;</code>verbose`</td>
 </tr>
 </tbody>
 </table>
 <hr />
+</div>
+<div id="features" class="section level2">
+<h2>Features</h2>
 <ul>
-<li><p>The function will return a list containing a dataframe per package entered with columns as indicated by the <code>format</code> argument Notice that when the <code>format</code> is set to “CRAN”, the date will be formatted to days-month-year. Because BioConductor reports only totals per month the “day” in this case will be set to <strong>28</strong> for every month.</p></li>
+<li><p>The function will return a list containing a dataframe per package entered with columns as indicated by the <code>format</code> argument. Notice that when the <code>format</code> is set to “CRAN”, the date will be formatted to days-month-year. Because BioConductor reports only totals per month the “day” in this case will be set to the last date of the corresponding month/year.</p></li>
 <li><p>The function will also attempt to report when a package names has been misspelled or just the server is not reachable. If you are receiving warning messages please check either of these situations.</p></li>
 </ul>
+<div id="obervations" class="section level3">
+<h3>Obervations</h3>
+<ul>
+<li><p>The BioConductor website reports total downloads per month.</p></li>
+<li><p>The original data also includes an ‘all’ entry, representing the total downloads per year.</p></li>
+<li><p>All the month are reported independently of whether this is the current year and data is still not available.</p></li>
+<li><p>You may notice this when requesting the data using the default format from BioConductor, ie. format=“bioC”.</p></li>
+<li><p>When using <code>format=&quot;CRAN&quot;</code>:</p>
+<ul>
+<li>the <code>all</code> entry is removed</li>
+<li>the last month to be reported is the previous to the current one, ie. months in the future with no data or the current one (with incomplete data) will not be reported</li>
+<li>the entries will be order cronologically from the oldest to the newest records</li>
+</ul></li>
+</ul>
+</div>
 </div>
 <div id="installation" class="section level2">
 <h2>Installation</h2>
 <p>For using the “bioC.logs” package, first you will need to install it.</p>
-<p>Thes table version can be downloaded from the CRAN repository:</p>
+<p>The stable version can be downloaded from the CRAN repository:</p>
 <pre><code>install.packages(&quot;bioC.logs&quot;)</code></pre>
 <p>To obtain the development version you can get it from the github repository, i.e.</p>
 <pre><code># need devtools for installing from the github repo
 install.packages(&quot;devtools&quot;)
 
 # install bioC.logs
-devtools::install_github(&quot;mponce0/bioC.logs&quot;)
-
-# load bioC.logs
+devtools::install_github(&quot;mponce0/bioC.logs&quot;)</code></pre>
+<p>For using the package, either the stable or developmemnt version, just load it using the library function:</p>
+<pre><code># load bioC.logs
 library(bioC.logs)</code></pre>
 </div>
 <div id="examples" class="section level2">
 <h2>Examples</h2>
 <p>You will need an active internet connection, as bioC.logs will download the reports from the BioConductor website on demand.</p>
-<pre><code>bioC_downloads(c(&quot;ABarray&quot;,&quot;a4Classif&quot;))
+<pre><code># it is possible to download multiple packages, the data will be returned in a list with one entry per package
+bioC_downloads(c(&quot;ABarray&quot;,&quot;a4Classif&quot;))
 
+# the &#39;verbose&#39; option allow you to turn off information reported by the function
 bioC_downloads(&quot;edgeR&quot;,verbose=FALSE)
 
-edgeR.logs &lt;- bioC_downloads(&quot;edgeR&quot;,format=&quot;CRAN&quot;)</code></pre>
+# setting format=&quot;CRAN&quot;, will structure the data &quot;a-la-CRAN&quot;
+edgeR.logs &lt;- bioC_downloads(&quot;edgeR&quot;,format=&quot;CRAN&quot;)
+# data is still returned in a list
+str(edgeR.logs)
+# access data from package
+edgeR.logs[[1]]
+
+# get the data in a particular range of dates using &#39;when&#39;
+edgeR.logs &lt;- bioC_downloads(&quot;edgeR&quot;, when=&#39;last-year&#39;, format=&#39;bioC&#39;)
+
+# get the data in a particular range of dates using &#39;to/from&#39;
+# not specifying &#39;from&#39; will assume since the very first record
+edgeR.logs &lt;- bioC_downloads(&quot;edgeR&quot;, to=&#39;03-2015&#39;, format=&#39;bioC&#39;)
+
+# not specifying &#39;from&#39; will assume until the current day
+edgeR.logs &lt;- bioC_downloads(&quot;edgeR&quot;, from=&#39;03-2015&#39;, format=&#39;bioC&#39;)
+
+edgeR.logs &lt;- bioC_downloads(&quot;edgeR&quot;, from=&#39;03-2015&#39;,to=&#39;05-2016&#39;, format=&#39;bioC&#39;)</code></pre>
 </div>
 </div>
 

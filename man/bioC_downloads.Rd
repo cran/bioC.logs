@@ -4,12 +4,25 @@
 \alias{bioC_downloads}
 \title{function to download logs from bioConductor stats}
 \usage{
-bioC_downloads(pckg = NULL, format = "bioC", verbose = TRUE)
+bioC_downloads(
+  pckg = NULL,
+  format = "bioC",
+  from = NULL,
+  to = NULL,
+  when = NULL,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{pckg}{list of packages names}
 
-\item{format}{two options: "bioC" (default) will report the downloads as reported by bioconductor, ie. "Year Month Nb_of_distinct_IPs Nb_of_downloads"; or, "CRAN" will report as CRAN logs does, ie. "Date  Nb_of_downloads package_Name"}
+\item{format}{two options: "bioC" (default) will report the downloads as reported by bioconductor, ie. "Year  Month  Nb_of_distinct_IPs  Nb_of_downloads"; or, "CRAN" will report as CRAN logs does, ie. "Date  counts  package_Name" (in cranlogs 'Nb_of_downloads' are referred as 'counts')}
+
+\item{from}{date in "MM-YYYY" format, specifying the initial date to be considered (optional argument)}
+
+\item{to}{date in "MM-YYYY" format, specifying the final date to be considered (optional argument)}
+
+\item{when}{optional argument, to specify pre-defined range dates; ie. 'ytd', 'year-to-date', 'last-year'}
 
 \item{verbose}{boolean flag indicating whether to print information about the processes...}
 }
@@ -21,7 +34,10 @@ function to download logs from bioConductor stats
 }
 \examples{
 bioC_downloads(c("ABarray","a4Classif"))
-bioC_downloads("edgeR",verbose=FALSE)
-edgeR.logs <- bioC_downloads("edgeR",format="CRAN")
-
+bioC_downloads("edgeR", verbose=FALSE)
+edgeR.logs <- bioC_downloads("edgeR", format="CRAN")
+edgeR.logs <- bioC_downloads("edgeR", when='last-year', format='bioC')
+edgeR.logs <- bioC_downloads("edgeR", to='03-2015', format='bioC')
+edgeR.logs <- bioC_downloads("edgeR", from='03-2015', format='bioC')
+edgeR.logs <- bioC_downloads("edgeR", from='03-2015',to='05-2016', format='bioC')
 }
