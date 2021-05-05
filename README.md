@@ -1,7 +1,10 @@
 # bioC.logs
 
+<!-- badges: start -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-last-release/bioC.logs)](https://cran.r-project.org/package=bioC.logs)
+[![CRAN checks](https://cranchecks.info/badges/worst/bioC.logs)](https://cranchecks.info/pkgs/bioC.logs)
 [![Downloads](https://cranlogs.r-pkg.org/badges/bioC.logs)](https://cran.r-project.org/package=bioC.logs)
+<!-- badges: end -->
 
 ## Introduction
 This package allows you to download the statistics of BioConductor packages'
@@ -10,14 +13,14 @@ downloads as reported by http://bioconductor.org/packages/stats/.
 
 ## Usage
 The main function of this package is called ```bioC_downloads```.
-The function accepts several arguments: `packages names`, `format` and `verbose`.
+The function accepts several arguments: `packages names`, `format`, `from/to` **or** `when` and `verbose`.
 
 argument	 | Description
 -----------|---------------
-`packages names` | is the name(s) of the package(s) you want to download the stats, for multiple package it should be a list of the packages names
-`format`     | accepts two options: `"bioC"` (default) will report the downloads as reported by bioconductor, ie. *"Year Month Nb_of_distinct_IPs Nb_of_downloads"*; or, `"CRAN"` will report as CRAN logs does, ie. *"Date  Nb_of_downloads package_Name"*
+`packages names` | is the name(s) of the package(s) for which you want to download the stats from; multiple packages should be indicated using a list of the packages names
+`format`     | accepts two options: `"bioC"` (default) will report the downloads as reported by bioconductor, ie. *"Year Month Nb_of_distinct_IPs Nb_of_downloads"*; or, `"CRAN"` will report as CRAN logs does, ie. *"Date  count  package_Name"*
 `from/to`    | optional arguments to indicate range of dates to recover the data within -- can NOT be used in combination with `when`
-`when`       | option argument to specify the range of dates to recover the data within -- can NOT be used in combination with `from/to`; possible options are "`ytd`","`year-to-date'","`year-from-now`","`last-year`"
+`when`       | optional argument to specify the range of dates to recover the data within -- can NOT be used in combination with `from/to`; possible options are "`ytd`","`year-to-date`","`year-from-now`","`last-year`"
 `verbose`    | is a boolean flag indicating whether to print information about the processes
 ---------------------------
 
@@ -25,7 +28,7 @@ argument	 | Description
 ## Features
 
 * The function will return a list containing a dataframe per package entered with columns as indicated by the `format` argument.
-Notice that when the `format` is set to "CRAN", the date will be formatted to days-month-year. Because BioConductor reports only totals per month the "day" in this case will be set to the last date of the corresponding month/year.
+Notice that when the `format` is set to `"CRAN"`, the date will be formatted to days-month-year. Because BioConductor reports only totals per month, the "day" in this case will be set to the last date of the corresponding month/year.
 
 * The function will also attempt to report when a package names has been misspelled or just the server is not reachable.
 If you are receiving warning messages please check either of these situations.
@@ -69,7 +72,7 @@ library(bioC.logs)
 
 
 ## Examples
-You will need an active internet connection, as bioC.logs will download the
+You will need an active internet connection, as `bioC.logs` will download the
 reports from the BioConductor website on demand.
 
 ```
@@ -98,3 +101,19 @@ edgeR.logs <- bioC_downloads("edgeR", from='03-2015', format='bioC')
 
 edgeR.logs <- bioC_downloads("edgeR", from='03-2015',to='05-2016', format='bioC')
 ```
+
+
+### Stats
+<!-- badges: start -->
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-last-release/bioC.logs)](https://cran.r-project.org/package=bioC.logs)
+[![CRAN checks](https://cranchecks.info/badges/worst/bioC.logs)](https://cranchecks.info/pkgs/bioC.logs)
+[![Downloads last.mnth](https://cranlogs.r-pkg.org/badges/bioC.logs)](https://cran.r-project.org/package=bioC.logs)
+[![Downloads last.day](https://cranlogs.r-pkg.org/badges/last-week/bioC.logs)](https://cran.r-project.org/package=bioC.logs)
+[![Downloads last.day](https://cranlogs.r-pkg.org/badges/last-day/bioC.logs)](https://cran.r-project.org/package=bioC.logs)
+<!-- badges: end -->
+<p align="center">
+	<img src="https://github.com/mponce0/R.pckgs.stats/blob/master/DWNLDS_bioC.logs.png" width="65%" alt="Live download stats" />
+	<figcaption>"Live" download stats, figure generated using "Visualize.CRAN.Downloads"</figcaption>
+</p>
+
+<object data="https://github.com/mponce0/R.pckgs.stats/blob/master/DWNLDS_bioC.logs.pdf" type="application/pdf" width="700px" height="700px">
