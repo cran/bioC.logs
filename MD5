@@ -1,13 +1,13 @@
-01d51bb05b239caeea98bcfda4620037 *DESCRIPTION
+4a175dadbe9b31f499bfa1ce139c67d6 *DESCRIPTION
 742ae3d1e47c80c1faf14b35923ae165 *NAMESPACE
-5de053f1beef21eb98f4d1ecad5108ff *NEWS
+c282d6e58cedee690ba366a1d7778577 *NEWS
 99a5693c331121b6f5ba8e4139d53dc0 *R/auxs-utils.R
 9b434605d9508c7343b665940edb861a *R/bioC_logs.R
-132635c14f9aeef4098d384deda75cd4 *README.md
+8c5ed127f6efd2ec17c1c058a519c914 *README.md
 42df830f35f680bb9588952039e00b38 *build/vignette.rds
 3c9e2d06e8560272e30c98b0c827478b *inst/doc/bioC.logs.R
 5110dbd41904072d7d9d356009f9f177 *inst/doc/bioC.logs.Rmd
-93a9e523c18cbccf490f44fe0f72a3c2 *inst/doc/bioC.logs.html
+464d6ef890d55dbd9b5b21f70dee1279 *inst/doc/bioC.logs.html
 c2542c3889883ceeb60365696d671b92 *man/Xyear.from.now.Rd
 8fe05c620944d8b6a1e3ee034a03ea89 *man/bioC_downloads.Rd
 58b7a6c109ebcfdf9d2578aa21bed243 *man/checkDate.Rd
